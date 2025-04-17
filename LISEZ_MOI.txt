@@ -1,0 +1,28 @@
+NOTE: Nous vous invitons à consulter le guide méthodologique de Géofluence, ainsi que les vidéos d'aide qui sont distribués.
+Ce court bloc-notes résume les étapes essentielles à l'utilisation de l'outil, mais ne remplace pas le guide ou les vidéos.
+
+Avant de commencer à utiliser l'outil Géofluence, vous devez configurer l'accès avec votre compte utilisateur.
+
+1.
+Pour se faire, utilisez l'outil (extension) "changeDataSource".
+En utilisant les options "Find" et "Replace" au bas de l'outil, changez les paramètres (VOUS DEVEZ RESPECTER LA CASSE DE VOTRE IDENTIFIANT):
+- "geof_betatest" pour votre nom d'utilisateur
+- "BETA" pour votre mot de passe
+* Il est normal que l'outil prenne plusieurs minutes à changer ces paramètres.
+
+(Vos informations de connexion devraient vous avoir été communiquées par courriel. Sinon, contactez michel.landry@obv-yamaska.qc.ca)
+
+2.
+Vous devez également mettre à jour la variable "Org_Resp" en la remplaçant par votre nom d'utilisateur.
+Vous accédez à cette variable par le menu "Projet / Propriétés / Variables"
+
+3.
+En principe, vous devriez désormais voir apparaitre vos données et vos entrées dans les tables de l'application.
+À ce stade, vous pouvez commencer à utiliser Géofluence normalement. Bien que le guide méthodologique de l'application vous
+fournira plus de détails, voici tout de même les deux étapes typiques pour commencer:
+
+3.1.
+Remplir les tables "Tbl_Statut", "Tbl_Poste", "Tbl_Employes", "Tbl_Projets" pour refléter votre organisation.
+
+3.2.
+Exporter le projet vers QField en utilisant l'extension "QFieldSync".
