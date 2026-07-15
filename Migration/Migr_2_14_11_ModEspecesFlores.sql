@@ -1,0 +1,3 @@
+UPDATE public."Tbl_EspecesFlore" SET "Herb" = 0,"Arbu" = 1,"Derniere mise a jour" = 'Michel Landry,2026/07' WHERE "Nom latin" = 'Spiraea alba var. alba';
+UPDATE public."Tbl_EspecesFlore" SET "Arbu" = 1,"Derniere mise a jour" = 'Michel Landry,2026/07' WHERE "Nom latin" = 'Parthenocissus vitacea';
+UPDATE public."Tbl_EspecesFlore" SET "Statut hydrique" = 'NI',"Derniere mise a jour" = 'Michel Landry,2026/07' WHERE "Nom latin" = 'Solidago altissima';
