@@ -138,8 +138,10 @@ CREATE OR REPLACE VIEW public.form_espperil_esp_v
     b."NbrVeg",
     b.unite,
     b."EEE_Densite",
+    b."EEE_Diam",
     b."Sup_m2",
     b."StadeDev",
+    b."EEE_Comment",
     b.espperil_id
    FROM "Form_EEE" b
      JOIN "Obs_Point" a ON a.rel_id = b."ID_EEE"
@@ -213,8 +215,10 @@ INSERT INTO public."Form_EEE" ("ID_EEE",
     "NbrVeg",
     unite,
     "EEE_Densite",
+    "EEE_Diam",
     "Sup_m2",
     "StadeDev",
+    "EEE_Comment",
 	espperil_id)
 VALUES(NEW."ID_EEE",
     NEW."ID_EVEN",
@@ -223,8 +227,10 @@ VALUES(NEW."ID_EEE",
     NEW."NbrVeg",
     NEW.unite,
     NEW."EEE_Densite",
+    NEW."EEE_Diam",
     NEW."Sup_m2",
     NEW."StadeDev",
+    NEW."EEE_Comment",
 	NEW.espperil_id);
 
 INSERT INTO public."Evenement" ("ID_EVEN","Utilisateur","Date","Heure","ID_OBS_P","ID_Licence","Proprio_donnee")
@@ -267,8 +273,10 @@ SET
     "NbrVeg" = NEW."NbrVeg",
     unite = NEW.unite,
     "EEE_Densite" = NEW."EEE_Densite",
+    "EEE_Diam" = NEW."EEE_Diam",
     "Sup_m2" = NEW."Sup_m2",
     "StadeDev" = NEW."StadeDev",
+    "EEE_Comment" = NEW."EEE_Comment",
 	espperil_id = NEW.espperil_id
 WHERE "ID_EEE" = OLD."ID_EEE";
 
